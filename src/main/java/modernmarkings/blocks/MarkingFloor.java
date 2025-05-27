@@ -76,17 +76,13 @@ public class MarkingFloor extends BlockBase {
         }
 
         // Check that the block below is solid and not air.
-        Block blockBelow = world.getBlock(x, y - 1, z);
-        return blockBelow != null && blockBelow.getMaterial()
-            .isSolid();
+        return World.doesBlockHaveSolidTopSurface(world, x, y - 1, z);
     }
 
     @Override
     public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
         // If the block below is no longer solid, drop the block as an item and remove it.
-        if (!world.getBlock(x, y - 1, z)
-            .getMaterial()
-            .isSolid()) {
+        if (!World.doesBlockHaveSolidTopSurface(world, x, y - 1, z)) {
             world.setBlockToAir(x, y, z);
             this.dropBlockAsItem(world, x, y, z, 0, 0);
         }

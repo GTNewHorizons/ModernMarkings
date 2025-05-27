@@ -14,8 +14,8 @@
 		"screenshots": [],
 		"parent": "",
 		"requiredMods": [],
-		"dependencies": ["chisel"],
+		"dependencies": [],
 		"dependants": [],
-		"useDependencyInformation": true
+		"useDependencyInformation": false
 	}]
 }
