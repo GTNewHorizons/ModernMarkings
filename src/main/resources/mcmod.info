@@ -1,16 +1,21 @@
-[
 {
-  "modid": "ags_modernmarkings",
-  "name": "AGS ModernMarkings Mod",
-  "description": "Adds Industrial/Modern themed stencil markings. rewritten from 1.20.1 based on the basemod by Sashiro!",
-  "version": "0.3",
-  "mcversion": "1.12.2",
-  "url": "https://github.com/sa-shiro/Minecraft-Forge-1.12.2-BaseMod",
-  "updateUrl": "",
-  "authorList": ["Sashiro","AminoGlycoSide148"],
-  "credits": "AminoGlycoSide148",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "A 1.7.10 backport of the 1.12.2 backport for the very simple mod that adds various decorational markings.",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/GTNewHorizons/ModernMarkings",
+		"updateUrl": "",
+		"authorList": ["jurrejelle"],
+		"credits": "AminoGlycoSide148",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": ["chisel"],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
 }
-]

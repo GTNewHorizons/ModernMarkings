@@ -35,7 +35,7 @@ public class ModernMarkings {
         ModRecipes.registerRecipes();
         GameRegistry.registerFuelHandler(new ModFuelHandler());
         if (FMLCommonHandler.instance()
-            .getEffectiveSide() == Side.CLIENT) {
+            .getSide() == Side.CLIENT) {
             ModRenderers.initRenderers();
         }
     }
