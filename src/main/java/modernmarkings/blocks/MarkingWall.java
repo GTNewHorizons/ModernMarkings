@@ -2,12 +2,14 @@ package modernmarkings.blocks;
 
 import static modernmarkings.init.ModBlocks.WALL_BLOCKS;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import modernmarkings.ModernMarkings;
+import modernmarkings.init.ModRenderers;
 
 public class MarkingWall extends BlockBase {
 
@@ -24,10 +26,28 @@ public class MarkingWall extends BlockBase {
 
     @Override
     public int onBlockPlaced(World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ, int meta) {
-        // Only allow placement on wall sides. If placed on top or bottom, default
-        // to north (metadata 2) or you can adjust as needed.
-        if (side == 0 || side == 1) {
-            return 2;
+        // Only allow placement on wall sides.
+        // If placed on top or bottom, continue to calculation with yaw.
+        if (side != 0 && side != 1) {
+            return side;
+        }
+
+        EntityPlayer player = world.getClosestPlayer(x, y, z, 10);
+        float yaw = player.rotationYaw % 360.0F;
+        if (yaw < 0.0F) {
+            yaw += 360.0F;
+        }
+
+        int rotation = MathHelper.floor_double((yaw * 4.0F / 360.0F) + 0.5D) & 3;
+        switch (rotation) {
+            case 0:
+                return 3;
+            case 1:
+                return 4;
+            case 2:
+                return 2;
+            case 3:
+                return 5;
         }
         // Save the chosen facing into metadata.
         return side;
@@ -89,7 +109,6 @@ public class MarkingWall extends BlockBase {
     @Override
     @SideOnly(Side.CLIENT)
     public int getRenderType() {
-        // Return the custom render ID you registered in your client proxy.
-        return ModernMarkings.proxy.renderMarkingWallID;
+        return ModRenderers.renderMarkingWallID;
     }
 }

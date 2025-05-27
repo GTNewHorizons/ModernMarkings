@@ -2,25 +2,18 @@ package modernmarkings.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.IIcon;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import modernmarkings.ModernMarkings;
 import modernmarkings.init.ModBlocks;
 import modernmarkings.init.ModItems;
 
 public class BlockBase extends Block {
 
-    private final String textureName;
-    private IIcon icon;
-
     protected BlockBase(String name, String textureName) {
         super(Material.carpet);
-        this.textureName = textureName;
         setBlockName(name);
+        setBlockTextureName(ModernMarkings.MODID + ":" + textureName);
 
         setCreativeTab(ModernMarkings.CREATIVE_TAB);
 
@@ -34,15 +27,4 @@ public class BlockBase extends Block {
         return false;
     }
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister register) {
-        this.icon = register.registerIcon(ModernMarkings.MODID + ":" + textureName);
-    }
-
-    @SideOnly(Side.CLIENT)
-    @Override
-    public IIcon getIcon(int side, int meta) {
-        return this.icon;
-    }
 }

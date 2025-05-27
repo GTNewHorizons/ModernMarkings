@@ -4,12 +4,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import modernmarkings.util.Resource;
+import modernmarkings.ModernMarkings;
 
 public class ModTab extends CreativeTabs {
 
     public ModTab(String name) {
-        super(Resource.MOD_ID + "." + name);
+        super(ModernMarkings.MODID + "." + name);
     }
 
     @Override

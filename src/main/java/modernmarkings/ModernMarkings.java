@@ -3,29 +3,30 @@ package modernmarkings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
 import modernmarkings.init.ModBlocks;
 import modernmarkings.init.ModFuelHandler;
 import modernmarkings.init.ModItems;
+import modernmarkings.init.ModRecipes;
+import modernmarkings.init.ModRenderers;
 import modernmarkings.init.ModTab;
-import modernmarkings.items.ModRecipes;
-import modernmarkings.proxy.CommonProxy;
-import modernmarkings.util.Resource;
 
-@Mod(modid = Resource.MOD_ID, version = Resource.VERSION, name = Resource.NAME, acceptedMinecraftVersions = "[1.7.10]")
+@Mod(
+    modid = ModernMarkings.MODID,
+    version = VERSION.VERSION,
+    name = ModernMarkings.NAME,
+    acceptedMinecraftVersions = "[1.7.10]",
+    dependencies = "required-after:chisel")
 public class ModernMarkings {
 
-    public static final String MODID = Resource.MOD_ID;
+    public static final String MODID = "modernmarkings";
+    public static final String NAME = "ModernMarkings";
     public static final Logger LOG = LogManager.getLogger(MODID);
     public static final ModTab CREATIVE_TAB = new ModTab("modernmarkings");
-
-    @SidedProxy(
-        clientSide = Resource.MOD_ID + ".proxy.ClientProxy",
-        serverSide = Resource.MOD_ID + ".proxy.CommonProxy")
-    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -33,7 +34,10 @@ public class ModernMarkings {
         ModBlocks.registerBlocks();
         ModRecipes.registerRecipes();
         GameRegistry.registerFuelHandler(new ModFuelHandler());
-        proxy.initRenderers();
+        if (FMLCommonHandler.instance()
+            .getEffectiveSide() == Side.CLIENT) {
+            ModRenderers.initRenderers();
+        }
     }
 
 }

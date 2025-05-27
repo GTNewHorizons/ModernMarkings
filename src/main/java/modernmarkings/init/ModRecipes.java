@@ -1,4 +1,4 @@
-package modernmarkings.items;
+package modernmarkings.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import com.cricketcraft.chisel.api.carving.CarvingUtils;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import modernmarkings.init.ModBlocks;
 
 public class ModRecipes {
 

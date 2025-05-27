@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import modernmarkings.ModernMarkings;
+import modernmarkings.init.ModRenderers;
 
 public class MarkingFloor extends BlockBase {
 
@@ -33,8 +33,7 @@ public class MarkingFloor extends BlockBase {
     @Override
     @SideOnly(Side.CLIENT)
     public int getRenderType() {
-        // Return the custom render ID you registered in your client proxy.
-        return ModernMarkings.proxy.renderMarkingFloorID;
+        return ModRenderers.renderMarkingFloorID;
     }
 
     @Override
@@ -65,7 +64,7 @@ public class MarkingFloor extends BlockBase {
                 meta = 0;
                 break;
         }
-        worldIn.setBlockMetadataWithNotify(x, y, z, meta, 2);
+        worldIn.setBlockMetadataWithNotify(x, y, z, meta, 3);
     }
 
 }

@@ -1,13 +1,15 @@
-package modernmarkings.proxy;
+package modernmarkings.init;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import modernmarkings.renderer.MarkingFloorRenderer;
 import modernmarkings.renderer.MarkingWallRenderer;
 
-public class ClientProxy extends CommonProxy {
+public class ModRenderers {
 
-    @Override
-    public void initRenderers() {
+    public static int renderMarkingWallID = -1;
+    public static int renderMarkingFloorID = -1;
+
+    public static void initRenderers() {
         renderMarkingWallID = RenderingRegistry.getNextAvailableRenderId();
         RenderingRegistry.registerBlockHandler(new MarkingWallRenderer());
 
