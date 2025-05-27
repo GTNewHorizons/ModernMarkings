@@ -30,6 +30,9 @@ public class MarkingWall extends BlockBase {
     public int onBlockPlaced(World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ, int meta) {
         // Only allow placement on wall sides.
         // If placed on top or bottom, continue to calculation with yaw.
+        // The metadata is based on the EnumFacing enum.
+        // 0 = DOWN, 1 = UP, 2 = NORTH
+        // 3 = SOUTH, 4 = EAST, 5 = WEST
         if (side != 0 && side != 1) {
             return side;
         }
