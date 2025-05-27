@@ -2,6 +2,7 @@ package modernmarkings.blocks;
 
 import static modernmarkings.init.ModBlocks.WALL_BLOCKS;
 
+import modernmarkings.ModernMarkings;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
@@ -12,6 +13,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import modernmarkings.init.ModRenderers;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class MarkingWall extends BlockBase {
 
@@ -30,7 +32,7 @@ public class MarkingWall extends BlockBase {
     public int onBlockPlaced(World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ, int meta) {
         // Only allow placement on wall sides.
         // If placed on top or bottom, continue to calculation with yaw.
-        // The metadata is based on the EnumFacing enum.
+        // The metadata is based on the ForgeDirection enum.
         // 0 = DOWN, 1 = UP, 2 = NORTH
         // 3 = SOUTH, 4 = EAST, 5 = WEST
         if (side != 0 && side != 1) {
@@ -127,23 +129,19 @@ public class MarkingWall extends BlockBase {
             return false;
         }
         int direction = getDirectionFromPlacedPlayer(world, x, y, z);
-        EnumFacing facing = EnumFacing.values()[direction];
-        Block blockAdjacent = world
-            .getBlock(x + facing.getFrontOffsetX(), y + facing.getFrontOffsetY(), z + facing.getFrontOffsetZ());
 
-        return blockAdjacent != null && blockAdjacent.getMaterial()
-            .isSolid();
+        ForgeDirection dir = ForgeDirection.getOrientation(direction);
+        return world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false);
     }
 
     @Override
     public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
         int meta = world.getBlockMetadata(x, y, z);
-        EnumFacing facing = EnumFacing.values()[meta];
-        Block blockAdjacent = world
-            .getBlock(x + facing.getFrontOffsetX(), y + facing.getFrontOffsetY(), z + facing.getFrontOffsetZ());
 
-        if (blockAdjacent == null || !blockAdjacent.getMaterial()
-            .isSolid()) {
+        // I have no idea why .getOpposite is required here when it's not in canPlaceBlockAt,
+        // but it works like this
+        ForgeDirection dir = ForgeDirection.getOrientation(meta).getOpposite();
+        if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false)) {
             world.setBlockToAir(x, y, z);
             this.dropBlockAsItem(world, x, y, z, 0, 0);
         }
