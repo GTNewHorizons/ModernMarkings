@@ -2,8 +2,10 @@ package modernmarkings.blocks;
 
 import static modernmarkings.init.ModBlocks.WALL_BLOCKS;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
@@ -31,8 +33,11 @@ public class MarkingWall extends BlockBase {
         if (side != 0 && side != 1) {
             return side;
         }
+        return getDirectionFromPlacedPlayer(world, x, y, z);
+    }
 
-        EntityPlayer player = world.getClosestPlayer(x, y, z, 10);
+    private int getDirectionFromPlacedPlayer(World world, int x, int y, int z) {
+        EntityPlayer player = world.getClosestPlayer(x, y, z, -1);
         float yaw = player.rotationYaw % 360.0F;
         if (yaw < 0.0F) {
             yaw += 360.0F;
@@ -49,8 +54,8 @@ public class MarkingWall extends BlockBase {
             case 3:
                 return 5;
         }
-        // Save the chosen facing into metadata.
-        return side;
+        // Unreachable since we are & 0b11-ing rotation
+        throw new RuntimeException("rotation wasn't 0<x<4 " + rotation);
     }
 
     @SideOnly(Side.CLIENT)
@@ -111,4 +116,35 @@ public class MarkingWall extends BlockBase {
     public int getRenderType() {
         return ModRenderers.renderMarkingWallID;
     }
+
+    @Override
+    public boolean canPlaceBlockAt(World world, int x, int y, int z) {
+        // Ensure the placement is valid per normal block rules
+        if (!super.canPlaceBlockAt(world, x, y, z)) {
+            return false;
+        }
+        int direction = getDirectionFromPlacedPlayer(world, x, y, z);
+        EnumFacing facing = EnumFacing.values()[direction];
+        Block blockAdjacent = world
+            .getBlock(x + facing.getFrontOffsetX(), y + facing.getFrontOffsetY(), z + facing.getFrontOffsetZ());
+
+        return blockAdjacent != null && blockAdjacent.getMaterial()
+            .isSolid();
+    }
+
+    @Override
+    public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
+        int meta = world.getBlockMetadata(x, y, z);
+        EnumFacing facing = EnumFacing.values()[meta];
+        Block blockAdjacent = world
+            .getBlock(x + facing.getFrontOffsetX(), y + facing.getFrontOffsetY(), z + facing.getFrontOffsetZ());
+
+        if (blockAdjacent == null || !blockAdjacent.getMaterial()
+            .isSolid()) {
+            world.setBlockToAir(x, y, z);
+            this.dropBlockAsItem(world, x, y, z, 0, 0);
+        }
+        super.onNeighborBlockChange(world, x, y, z, neighbor);
+    }
+
 }

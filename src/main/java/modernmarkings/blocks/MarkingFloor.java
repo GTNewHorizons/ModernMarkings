@@ -2,6 +2,7 @@ package modernmarkings.blocks;
 
 import static modernmarkings.init.ModBlocks.FLOOR_BLOCKS;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
@@ -65,6 +66,31 @@ public class MarkingFloor extends BlockBase {
                 break;
         }
         worldIn.setBlockMetadataWithNotify(x, y, z, meta, 3);
+    }
+
+    @Override
+    public boolean canPlaceBlockAt(World world, int x, int y, int z) {
+        // Ensure the placement is valid per normal block rules
+        if (!super.canPlaceBlockAt(world, x, y, z)) {
+            return false;
+        }
+
+        // Check that the block below is solid and not air.
+        Block blockBelow = world.getBlock(x, y - 1, z);
+        return blockBelow != null && blockBelow.getMaterial()
+            .isSolid();
+    }
+
+    @Override
+    public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
+        // If the block below is no longer solid, drop the block as an item and remove it.
+        if (!world.getBlock(x, y - 1, z)
+            .getMaterial()
+            .isSolid()) {
+            world.setBlockToAir(x, y, z);
+            this.dropBlockAsItem(world, x, y, z, 0, 0);
+        }
+        super.onNeighborBlockChange(world, x, y, z, neighbor);
     }
 
 }
