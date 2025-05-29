@@ -79,6 +79,7 @@ public class ModBlocks {
     public static final Block WALL_MARKING_ARROWRIGHT = new MarkingWall("wall_marking_arrowright", "marking_wall_arrowright");
     public static final Block WALL_MARKING_HAZARDLINE_LEFT = new MarkingWall("wall_marking_hazardline_left", "marking_wall_hazardline_left");
     public static final Block WALL_MARKING_HAZARDLINE_RIGHT = new MarkingWall("wall_marking_hazardline_right", "marking_wall_hazardline_right");
+    public static final Block WALL_MARKING_HAZARD_DIAMOND = new MarkingWall("wall_marking_hazard_diamond", "marking_wall_hazard_diamond");
 
     public static final Block WALL_MARKING_VOLTAGE_EU = new MarkingWall("wall_marking_voltage_eu", "marking_wall_voltage_eu");
     public static final Block WALL_MARKING_VOLTAGE_EV = new MarkingWall("wall_marking_voltage_ev", "marking_wall_voltage_ev");
