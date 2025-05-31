@@ -37,12 +37,12 @@ public class ModRecipes {
     public static void addChiselRecipes() {
         for (int i = 0; i < ModBlocks.FLOOR_BLOCKS.size(); i++) {
             Block block = ModBlocks.FLOOR_BLOCKS.get(i);
-            CarvingUtils.chisel.addVariation("Floor blocks", block, i, i);
+            CarvingUtils.chisel.addVariation("Floor blocks", block, 0, i);
         }
 
         for (int i = 0; i < ModBlocks.WALL_BLOCKS.size(); i++) {
             Block block = ModBlocks.WALL_BLOCKS.get(i);
-            CarvingUtils.chisel.addVariation("Wall blocks", block, i, i);
+            CarvingUtils.chisel.addVariation("Wall blocks", block, 0, i);
         }
     };
 
