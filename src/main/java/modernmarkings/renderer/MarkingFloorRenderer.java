@@ -57,7 +57,7 @@ public class MarkingFloorRenderer implements ISimpleBlockRenderingHandler {
         RenderBlocks renderer) {
         int meta = world.getBlockMetadata(x, y, z);
 
-        renderer.setRenderBounds(0.0, 0.0, 0.0, 1.0, 0.0001, 1.0);
+        renderer.setRenderBounds(0.0, 0.0, 0.0, 1.0, 0.0005, 1.0);
 
         IIcon icon = block.getIcon(getRenderSide(meta), meta);
 

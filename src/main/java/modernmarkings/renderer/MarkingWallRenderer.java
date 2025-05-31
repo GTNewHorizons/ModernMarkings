@@ -56,16 +56,16 @@ public class MarkingWallRenderer implements ISimpleBlockRenderingHandler {
         int meta = world.getBlockMetadata(x, y, z);
         switch (meta) {
             case 2: // north
-                renderer.setRenderBounds(0.0, 0.0, 0.9999, 1.0, 1.0, 1.0);
+                renderer.setRenderBounds(0.0, 0.0, 0.9995, 1.0, 1.0, 1.0);
                 break;
             case 3: // south
-                renderer.setRenderBounds(0.0, 0.0, 0.0, 1.0, 1.0, 0.0001);
+                renderer.setRenderBounds(0.0, 0.0, 0.0, 1.0, 1.0, 0.0005);
                 break;
             case 4: // west
-                renderer.setRenderBounds(0.9999, 0.0, 0.0, 1.0, 1.0, 1.0);
+                renderer.setRenderBounds(0.9995, 0.0, 0.0, 1.0, 1.0, 1.0);
                 break;
             case 5: // east
-                renderer.setRenderBounds(0.0, 0.0, 0.0, 0.0001, 1.0, 1.0);
+                renderer.setRenderBounds(0.0, 0.0, 0.0, 0.0005, 1.0, 1.0);
                 break;
             default:
                 return false; // If metadata is unexpected, don’t render.
