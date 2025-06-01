@@ -45,6 +45,33 @@ public class ModBlocks {
     public static final Block FLOOR_MARKING_YELLOW_SQUARE = new MarkingFloor("floor_marking_yellow_square", "marking_yellow_square");
     public static final Block FLOOR_MARKING_YELLOW_STRIPES = new MarkingFloor("floor_marking_yellow_stripes", "marking_yellow_stripes");
 
+    public static final Block FLOOR_MARKING_LETTER_A = new MarkingFloor("floor_marking_letter_a", "marking_letter_a");
+    public static final Block FLOOR_MARKING_LETTER_B = new MarkingFloor("floor_marking_letter_b", "marking_letter_b");
+    public static final Block FLOOR_MARKING_LETTER_C = new MarkingFloor("floor_marking_letter_c", "marking_letter_c");
+    public static final Block FLOOR_MARKING_LETTER_D = new MarkingFloor("floor_marking_letter_d", "marking_letter_d");
+    public static final Block FLOOR_MARKING_LETTER_E = new MarkingFloor("floor_marking_letter_e", "marking_letter_e");
+    public static final Block FLOOR_MARKING_LETTER_F = new MarkingFloor("floor_marking_letter_f", "marking_letter_f");
+    public static final Block FLOOR_MARKING_LETTER_G = new MarkingFloor("floor_marking_letter_g", "marking_letter_g");
+    public static final Block FLOOR_MARKING_LETTER_H = new MarkingFloor("floor_marking_letter_h", "marking_letter_h");
+    public static final Block FLOOR_MARKING_LETTER_I = new MarkingFloor("floor_marking_letter_i", "marking_letter_i");
+    public static final Block FLOOR_MARKING_LETTER_J = new MarkingFloor("floor_marking_letter_j", "marking_letter_j");
+    public static final Block FLOOR_MARKING_LETTER_K = new MarkingFloor("floor_marking_letter_k", "marking_letter_k");
+    public static final Block FLOOR_MARKING_LETTER_L = new MarkingFloor("floor_marking_letter_l", "marking_letter_l");
+    public static final Block FLOOR_MARKING_LETTER_M = new MarkingFloor("floor_marking_letter_m", "marking_letter_m");
+    public static final Block FLOOR_MARKING_LETTER_N = new MarkingFloor("floor_marking_letter_n", "marking_letter_n");
+    public static final Block FLOOR_MARKING_LETTER_O = new MarkingFloor("floor_marking_letter_o", "marking_letter_o");
+    public static final Block FLOOR_MARKING_LETTER_P = new MarkingFloor("floor_marking_letter_p", "marking_letter_p");
+    public static final Block FLOOR_MARKING_LETTER_Q = new MarkingFloor("floor_marking_letter_q", "marking_letter_q");
+    public static final Block FLOOR_MARKING_LETTER_R = new MarkingFloor("floor_marking_letter_r", "marking_letter_r");
+    public static final Block FLOOR_MARKING_LETTER_S = new MarkingFloor("floor_marking_letter_s", "marking_letter_s");
+    public static final Block FLOOR_MARKING_LETTER_T = new MarkingFloor("floor_marking_letter_t", "marking_letter_t");
+    public static final Block FLOOR_MARKING_LETTER_U = new MarkingFloor("floor_marking_letter_u", "marking_letter_u");
+    public static final Block FLOOR_MARKING_LETTER_V = new MarkingFloor("floor_marking_letter_v", "marking_letter_v");
+    public static final Block FLOOR_MARKING_LETTER_W = new MarkingFloor("floor_marking_letter_w", "marking_letter_w");
+    public static final Block FLOOR_MARKING_LETTER_X = new MarkingFloor("floor_marking_letter_x", "marking_letter_x");
+    public static final Block FLOOR_MARKING_LETTER_Y = new MarkingFloor("floor_marking_letter_y", "marking_letter_y");
+    public static final Block FLOOR_MARKING_LETTER_Z = new MarkingFloor("floor_marking_letter_z", "marking_letter_z");
+
     public static final Block WALL_MARKING_EXIT = new MarkingWall("wall_marking_exit", "marking_wall_exit");
     public static final Block WALL_MARKING_NUMBER_0 = new MarkingWall("wall_marking_number_0", "marking_number_0");
     public static final Block WALL_MARKING_NUMBER_1 = new MarkingWall("wall_marking_number_1", "marking_number_1");
@@ -99,6 +126,33 @@ public class ModBlocks {
     public static final Block WALL_MARKING_VOLTAGE_UV = new MarkingWall("wall_marking_voltage_uv", "marking_wall_voltage_uv");
     public static final Block WALL_MARKING_VOLTAGE_UXV = new MarkingWall("wall_marking_voltage_uxv", "marking_wall_voltage_uxv");
     public static final Block WALL_MARKING_VOLTAGE_ZPM = new MarkingWall("wall_marking_voltage_zpm", "marking_wall_voltage_zpm");
+
+    public static final Block WALL_MARKING_LETTER_A = new MarkingWall("wall_marking_letter_a", "marking_letter_a");
+    public static final Block WALL_MARKING_LETTER_B = new MarkingWall("wall_marking_letter_b", "marking_letter_b");
+    public static final Block WALL_MARKING_LETTER_C = new MarkingWall("wall_marking_letter_c", "marking_letter_c");
+    public static final Block WALL_MARKING_LETTER_D = new MarkingWall("wall_marking_letter_d", "marking_letter_d");
+    public static final Block WALL_MARKING_LETTER_E = new MarkingWall("wall_marking_letter_e", "marking_letter_e");
+    public static final Block WALL_MARKING_LETTER_F = new MarkingWall("wall_marking_letter_f", "marking_letter_f");
+    public static final Block WALL_MARKING_LETTER_G = new MarkingWall("wall_marking_letter_g", "marking_letter_g");
+    public static final Block WALL_MARKING_LETTER_H = new MarkingWall("wall_marking_letter_h", "marking_letter_h");
+    public static final Block WALL_MARKING_LETTER_I = new MarkingWall("wall_marking_letter_i", "marking_letter_i");
+    public static final Block WALL_MARKING_LETTER_J = new MarkingWall("wall_marking_letter_j", "marking_letter_j");
+    public static final Block WALL_MARKING_LETTER_K = new MarkingWall("wall_marking_letter_k", "marking_letter_k");
+    public static final Block WALL_MARKING_LETTER_L = new MarkingWall("wall_marking_letter_l", "marking_letter_l");
+    public static final Block WALL_MARKING_LETTER_M = new MarkingWall("wall_marking_letter_m", "marking_letter_m");
+    public static final Block WALL_MARKING_LETTER_N = new MarkingWall("wall_marking_letter_n", "marking_letter_n");
+    public static final Block WALL_MARKING_LETTER_O = new MarkingWall("wall_marking_letter_o", "marking_letter_o");
+    public static final Block WALL_MARKING_LETTER_P = new MarkingWall("wall_marking_letter_p", "marking_letter_p");
+    public static final Block WALL_MARKING_LETTER_Q = new MarkingWall("wall_marking_letter_q", "marking_letter_q");
+    public static final Block WALL_MARKING_LETTER_R = new MarkingWall("wall_marking_letter_r", "marking_letter_r");
+    public static final Block WALL_MARKING_LETTER_S = new MarkingWall("wall_marking_letter_s", "marking_letter_s");
+    public static final Block WALL_MARKING_LETTER_T = new MarkingWall("wall_marking_letter_t", "marking_letter_t");
+    public static final Block WALL_MARKING_LETTER_U = new MarkingWall("wall_marking_letter_u", "marking_letter_u");
+    public static final Block WALL_MARKING_LETTER_V = new MarkingWall("wall_marking_letter_v", "marking_letter_v");
+    public static final Block WALL_MARKING_LETTER_W = new MarkingWall("wall_marking_letter_w", "marking_letter_w");
+    public static final Block WALL_MARKING_LETTER_X = new MarkingWall("wall_marking_letter_x", "marking_letter_x");
+    public static final Block WALL_MARKING_LETTER_Y = new MarkingWall("wall_marking_letter_y", "marking_letter_y");
+    public static final Block WALL_MARKING_LETTER_Z = new MarkingWall("wall_marking_letter_z", "marking_letter_z");
     // spotless:on
 
     public static void registerBlocks() {
