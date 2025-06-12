@@ -31,6 +31,15 @@ public class ModRecipes {
             Items.paper,
             'Y',
             Blocks.planks);
+        GameRegistry.addRecipe(
+            new ItemStack(ModBlocks.WALL_MARKING_FLAG_PRIDE, 64),
+            "   ",
+            "YX ",
+            "Y  ",
+            'X',
+            Items.paper,
+            'Y',
+            Items.stick);
         addChiselRecipes();
     }
 
@@ -40,9 +49,14 @@ public class ModRecipes {
             CarvingUtils.chisel.addVariation("Floor blocks", block, 0, i);
         }
 
-        for (int i = 0; i < ModBlocks.WALL_BLOCKS.size(); i++) {
-            Block block = ModBlocks.WALL_BLOCKS.get(i);
+        for (int i = 0; i < ModBlocks.WALL_BLOCKS_GENERAL.size(); i++) {
+            Block block = ModBlocks.WALL_BLOCKS_GENERAL.get(i);
             CarvingUtils.chisel.addVariation("Wall blocks", block, 0, i);
+        }
+
+        for (int i = 0; i < ModBlocks.WALL_BLOCKS_FLAG.size(); i++) {
+            Block block = ModBlocks.WALL_BLOCKS_FLAG.get(i);
+            CarvingUtils.chisel.addVariation("Flags", block, 0, i);
         }
     };
 

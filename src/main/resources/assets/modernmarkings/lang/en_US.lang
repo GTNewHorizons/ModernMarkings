@@ -138,3 +138,17 @@ tile.wall_marking_letter_w.name=Letter W Wall Marking
 tile.wall_marking_letter_x.name=Letter X Wall Marking
 tile.wall_marking_letter_y.name=Letter Y Wall Marking
 tile.wall_marking_letter_z.name=Letter Z Wall Marking
+
+tile.wall_marking_flag_gtnh.name=GTNH Logo Marking
+tile.wall_marking_flag_agender.name=Agender Pride Flag Marking
+tile.wall_marking_flag_asexual.name=Asexual Pride Flag Marking
+tile.wall_marking_flag_bisexual.name=Bisexual Pride Flag Marking
+tile.wall_marking_flag_intersex.name=Intersex Pride Flag Marking
+tile.wall_marking_flag_nonbinary.name=Nonbinary Pride Flag Marking
+tile.wall_marking_flag_pansexual.name=Pansexual Pride Flag Marking
+tile.wall_marking_flag_polyamory.name=Polyamory Pride Flag Marking
+tile.wall_marking_flag_progressive.name=Progressive Pride Flag Marking
+tile.wall_marking_flag_pride.name=Gay Pride Flag Marking
+tile.wall_marking_flag_sappphic.name=Sapphic Pride Flag Marking
+tile.wall_marking_flag_trans.name=Trans Pride Flag Marking
+tile.wall_marking_flag_vincian.name=Vincian Pride Flag Marking
