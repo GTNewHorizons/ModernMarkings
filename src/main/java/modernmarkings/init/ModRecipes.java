@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import com.cricketcraft.chisel.api.carving.CarvingUtils;
 
@@ -13,33 +14,42 @@ public class ModRecipes {
 
     public static void registerRecipes() {
         GameRegistry.addRecipe(
-            new ItemStack(ModBlocks.FLOOR_MARKING_EXIT, 64),
-            " X ",
-            " Y ",
-            "   ",
-            'X',
-            Items.paper,
-            'Y',
-            Blocks.planks);
+            new ShapedOreRecipe(
+                new ItemStack(ModBlocks.FLOOR_MARKING_EXIT, 64),
+                " Z ",
+                " X ",
+                " Y ",
+                'X',
+                Items.paper,
+                'Y',
+                Blocks.planks,
+                'Z',
+                "dye"));
 
         GameRegistry.addRecipe(
-            new ItemStack(ModBlocks.WALL_MARKING_EXIT, 64),
-            "   ",
-            "XY ",
-            "   ",
-            'X',
-            Items.paper,
-            'Y',
-            Blocks.planks);
+            new ShapedOreRecipe(
+                new ItemStack(ModBlocks.WALL_MARKING_EXIT, 64),
+                "   ",
+                "YXZ",
+                "   ",
+                'X',
+                Items.paper,
+                'Y',
+                Blocks.planks,
+                'Z',
+                "dye"));
         GameRegistry.addRecipe(
-            new ItemStack(ModBlocks.WALL_MARKING_FLAG_PRIDE, 64),
-            "   ",
-            "YX ",
-            "Y  ",
-            'X',
-            Items.paper,
-            'Y',
-            Items.stick);
+            new ShapedOreRecipe(
+                new ItemStack(ModBlocks.WALL_MARKING_FLAG_PRIDE, 64),
+                "   ",
+                "YXZ",
+                "Y  ",
+                'X',
+                Items.paper,
+                'Y',
+                Items.stick,
+                'Z',
+                "dye"));
         addChiselRecipes();
     }
 
