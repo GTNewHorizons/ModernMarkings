@@ -1,5 +1,7 @@
 package modernmarkings.blocks;
 
+import static modernmarkings.init.ModBlocks.WALL_BLOCKS;
+
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
@@ -15,6 +17,7 @@ public class MarkingWall extends BlockBase {
 
     public MarkingWall(String name, String textureName) {
         super(name, textureName);
+        WALL_BLOCKS.add(this);
         setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
     }
 
