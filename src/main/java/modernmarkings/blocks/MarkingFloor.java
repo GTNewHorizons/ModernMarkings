@@ -1,9 +1,8 @@
 package modernmarkings.blocks;
 
-import static modernmarkings.init.ModBlocks.FLOOR_BLOCKS;
-
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
@@ -11,13 +10,17 @@ import net.minecraft.world.World;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import modernmarkings.init.ModBlocks;
+import modernmarkings.init.ModItems;
 import modernmarkings.init.ModRenderers;
 
 public class MarkingFloor extends BlockBase {
 
     public MarkingFloor(String name, String textureName) {
         super(name, textureName);
-        FLOOR_BLOCKS.add(this);
+        ModBlocks.BLOCKS.add(this);
+        ModBlocks.FLOOR_BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlock(this));
         setBlockBounds(0.0f, 0.0f, 0.0f, 1.0f, 0.0001f, 1.0f);
     }
 

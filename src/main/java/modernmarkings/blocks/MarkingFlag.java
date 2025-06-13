@@ -1,12 +1,21 @@
 package modernmarkings.blocks;
 
-import static modernmarkings.init.ModBlocks.WALL_BLOCKS_FLAG;
+import net.minecraft.item.ItemBlock;
+
+import modernmarkings.config.BlockConfig;
+import modernmarkings.init.ModBlocks;
+import modernmarkings.init.ModItems;
 
 public class MarkingFlag extends MarkingWall {
 
     public MarkingFlag(String name, String textureName) {
         super(name, textureName);
-        WALL_BLOCKS_FLAG.add(this);
+        if (BlockConfig.enableFlags) {
+
+            ModBlocks.BLOCKS.add(this);
+            ModBlocks.WALL_BLOCKS_FLAG.add(this);
+            ModItems.ITEMS.add(new ItemBlock(this));
+        }
     }
 
 }

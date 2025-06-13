@@ -3,11 +3,15 @@ package modernmarkings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.gtnewhorizon.gtnhlib.config.ConfigException;
+import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
+
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
+import modernmarkings.config.BlockConfig;
 import modernmarkings.init.ModBlocks;
 import modernmarkings.init.ModFuelHandler;
 import modernmarkings.init.ModItems;
@@ -30,6 +34,13 @@ public class ModernMarkings {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+
+        try {
+            ConfigurationManager.registerConfig(BlockConfig.class);
+        } catch (ConfigException e) {
+            throw new RuntimeException(e);
+        }
+
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         ModRecipes.registerRecipes();
