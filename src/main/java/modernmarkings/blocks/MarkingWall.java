@@ -110,8 +110,7 @@ public class MarkingWall extends BlockBase {
         return AxisAlignedBB.getBoundingBox(0, 0, 0, 0, 0, 0);
     }
 
-    public void setBlockBoundsBasedOnState(IBlockAccess worldIn, int x, int y, int z)
-    {
+    public void setBlockBoundsBasedOnState(IBlockAccess worldIn, int x, int y, int z) {
         int meta = worldIn.getBlockMetadata(x, y, z);
 
         float minY = 0;
