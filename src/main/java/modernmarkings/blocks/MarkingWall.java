@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
@@ -107,6 +108,35 @@ public class MarkingWall extends BlockBase {
     @Override
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World worldIn, int x, int y, int z) {
         return AxisAlignedBB.getBoundingBox(0, 0, 0, 0, 0, 0);
+    }
+
+    public void setBlockBoundsBasedOnState(IBlockAccess worldIn, int x, int y, int z)
+    {
+        int meta = worldIn.getBlockMetadata(x, y, z);
+
+        float minY = 0;
+        float maxY = 1.0F;
+        float minX = 0.0F;
+        float maxX = 1.0F;
+        float thickness = 0.01F;
+
+        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+
+        // From BlockSign
+        switch (meta) {
+            case 2:
+                this.setBlockBounds(minX, minY, 1.0F - thickness, maxX, maxY, 1.0F);
+                break;
+            case 3:
+                this.setBlockBounds(minX, minY, 0.0F, maxX, maxY, thickness);
+                break;
+            case 4:
+                this.setBlockBounds(1.0F - thickness, minY, minX, 1.0F, maxY, maxX);
+                break;
+            case 5:
+                this.setBlockBounds(0.0F, minY, minX, thickness, maxY, maxX);
+                break;
+        }
     }
 
     @Override
