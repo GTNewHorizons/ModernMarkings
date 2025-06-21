@@ -119,22 +119,13 @@ public class MarkingWall extends BlockBase {
         float maxX = 1.0F;
         float thickness = 0.01F;
 
-        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
-
         // From BlockSign
         switch (meta) {
-            case 2:
-                this.setBlockBounds(minX, minY, 1.0F - thickness, maxX, maxY, 1.0F);
-                break;
-            case 3:
-                this.setBlockBounds(minX, minY, 0.0F, maxX, maxY, thickness);
-                break;
-            case 4:
-                this.setBlockBounds(1.0F - thickness, minY, minX, 1.0F, maxY, maxX);
-                break;
-            case 5:
-                this.setBlockBounds(0.0F, minY, minX, thickness, maxY, maxX);
-                break;
+			2 -> this.setBlockBounds(minX, minY, 1.0F - thickness, maxX, maxY, 1.0F);
+			3 -> this.setBlockBounds(minX, minY, 0.0F, maxX, maxY, thickness);
+			4 -> this.setBlockBounds(1.0F - thickness, minY, minX, 1.0F, maxY, maxX);
+			5 -> this.setBlockBounds(0.0F, minY, minX, thickness, maxY, maxX);
+			default -> this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
         }
     }
 
