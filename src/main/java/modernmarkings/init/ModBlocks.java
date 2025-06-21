@@ -6,6 +6,7 @@ import java.util.List;
 import net.minecraft.block.Block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import modernmarkings.blocks.DesignerBlock;
 import modernmarkings.blocks.MarkingFloor;
 import modernmarkings.blocks.MarkingWall;
 
@@ -17,6 +18,8 @@ public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
     public static final List<Block> FLOOR_BLOCKS = new ArrayList<>();
     public static final List<Block> WALL_BLOCKS = new ArrayList<>();
+
+    public static final Block DESIGNER_BLOCK = new DesignerBlock("designer_block", "designer_block");
 
     // spotless:off
     public static final Block FLOOR_MARKING_EXIT = new MarkingFloor("floor_marking_exit", "marking_exit");

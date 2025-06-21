@@ -138,3 +138,14 @@ tile.wall_marking_letter_w.name=Letter W Wall Marking
 tile.wall_marking_letter_x.name=Letter X Wall Marking
 tile.wall_marking_letter_y.name=Letter Y Wall Marking
 tile.wall_marking_letter_z.name=Letter Z Wall Marking
+
+gui.canvas.export=Export
+gui.canvas.import=Import
+gui.canvas.save=Save
+gui.canvas.load=Load
+gui.canvas.canvas-item=Canvas to draw on
+gui.canvas.color=Color Selected
+gui.canvas.canvas-size=Canvas Size - %d
+gui.canvas.zoom=Canvas Zoom - %s
+gui.canvas.brush-size=Brush Size - %d
+gui.canvas.brush-type=Brush
