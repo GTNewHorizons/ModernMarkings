@@ -110,6 +110,7 @@ public class MarkingWall extends BlockBase {
         return AxisAlignedBB.getBoundingBox(0, 0, 0, 0, 0, 0);
     }
 
+    @Override
     public void setBlockBoundsBasedOnState(IBlockAccess worldIn, int x, int y, int z) {
         int meta = worldIn.getBlockMetadata(x, y, z);
 
@@ -121,11 +122,11 @@ public class MarkingWall extends BlockBase {
 
         // From BlockSign
         switch (meta) {
-			2 -> this.setBlockBounds(minX, minY, 1.0F - thickness, maxX, maxY, 1.0F);
-			3 -> this.setBlockBounds(minX, minY, 0.0F, maxX, maxY, thickness);
-			4 -> this.setBlockBounds(1.0F - thickness, minY, minX, 1.0F, maxY, maxX);
-			5 -> this.setBlockBounds(0.0F, minY, minX, thickness, maxY, maxX);
-			default -> this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+            case 2 -> this.setBlockBounds(minX, minY, 1.0F - thickness, maxX, maxY, 1.0F);
+            case 3 -> this.setBlockBounds(minX, minY, 0.0F, maxX, maxY, thickness);
+            case 4 -> this.setBlockBounds(1.0F - thickness, minY, minX, 1.0F, maxY, maxX);
+            case 5 -> this.setBlockBounds(0.0F, minY, minX, thickness, maxY, maxX);
+            default -> this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
         }
     }
 
