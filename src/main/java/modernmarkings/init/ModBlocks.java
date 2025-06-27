@@ -74,6 +74,8 @@ public class ModBlocks {
 
     public static final Block WALL_MARKING_EXIT = new MarkingWall("wall_marking_exit", "marking_wall_exit");
     public static final Block WALL_MARKING_UNIT = new MarkingWall("wall_marking_unit", "marking_wall_unit");
+    public static final Block WALL_MARKING_FIRST_AID = new MarkingWall("wall_marking_first_aid", "marking_wall_first_aid");
+    public static final Block WALL_MARKING_FIRE_EXTINGUISHER = new MarkingWall("wall_marking_fire_extinguisher", "marking_wall_fire_extinguisher");
     public static final Block WALL_MARKING_NUMBER_0 = new MarkingWall("wall_marking_number_0", "marking_number_0");
     public static final Block WALL_MARKING_NUMBER_1 = new MarkingWall("wall_marking_number_1", "marking_number_1");
     public static final Block WALL_MARKING_NUMBER_2 = new MarkingWall("wall_marking_number_2", "marking_number_2");
