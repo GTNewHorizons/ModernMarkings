@@ -11,6 +11,7 @@ tile.floor_marking_white_square.name=White Square Floor Marking
 tile.floor_marking_white_singleline.name=White Line Floor Marking
 tile.floor_marking_whiteblack_hazardline.name=White Hazard Line Floor Marking
 tile.floor_marking_noentry.name=No Entry Floor Marking
+tile.floor_marking_nostep.name=No Step Floor Marking
 
 tile.floor_marking_yellow_crossing.name=Yellow Crossing Floor Marking
 tile.floor_marking_yellow_t_crossing.name=Yellow T Crossing Floor Marking
