@@ -32,6 +32,11 @@ tile.floor_marking_yellow_crossing.name=Yellow Crossing Floor Marking
 tile.floor_marking_yellow_t_crossing.name=Yellow T Crossing Floor Marking
 tile.floor_marking_yellow_end.name=Yellow End Floor Marking
 tile.floor_marking_yellow_turn.name=Yellow Turn Floor Marking
+tile.floor_marking_white_crossing.name=White Crossing Floor Marking
+tile.floor_marking_white_t_crossing.name=White T Crossing Floor Marking
+tile.floor_marking_white_end.name=White End Floor Marking
+tile.floor_marking_white_turn.name=White Turn Floor Marking
+tile.floor_marking_white_sideline.name=White Sideline Floor Marking
 
 
 tile.floor_marking_letter_a.name=Letter A Floor Marking
