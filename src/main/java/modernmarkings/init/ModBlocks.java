@@ -116,6 +116,9 @@ public class ModBlocks {
     public static final Block FLOOR_MARKING_LETTER_Z = new MarkingFloor("floor_marking_letter_z", "marking_letter_z");
 
     public static final Block WALL_MARKING_EXIT = new MarkingWall("wall_marking_exit", "marking_wall_exit");
+    public static final Block WALL_MARKING_UNIT = new MarkingWall("wall_marking_unit", "marking_wall_unit");
+    public static final Block WALL_MARKING_FIRST_AID = new MarkingWall("wall_marking_first_aid", "marking_wall_first_aid");
+    public static final Block WALL_MARKING_FIRE_EXTINGUISHER = new MarkingWall("wall_marking_fire_extinguisher", "marking_wall_fire_extinguisher");
     public static final Block WALL_MARKING_NUMBER_0 = new MarkingWall("wall_marking_number_0", "marking_number_0");
     public static final Block WALL_MARKING_NUMBER_1 = new MarkingWall("wall_marking_number_1", "marking_number_1");
     public static final Block WALL_MARKING_NUMBER_2 = new MarkingWall("wall_marking_number_2", "marking_number_2");
@@ -143,6 +146,7 @@ public class ModBlocks {
     public static final Block WALL_MARKING_SYMBOL_PINCH = new MarkingWall("wall_marking_symbol_pinch", "marking_wall_symbol_pinch");
     public static final Block WALL_MARKING_SYMBOL_PRODUCTION = new MarkingWall("wall_marking_symbol_production", "marking_wall_symbol_production");
     public static final Block WALL_MARKING_SYMBOL_RADIATION = new MarkingWall("wall_marking_symbol_radiation", "marking_wall_symbol_radiation");
+    public static final Block WALL_MARKING_SYMBOL_RADIATION_2 = new MarkingWall("wall_marking_symbol_radiation_2", "marking_wall_symbol_radiation_2");
     public static final Block WALL_MARKING_SYMBOL_STORAGE = new MarkingWall("wall_marking_symbol_storage", "marking_wall_symbol_storage");
     public static final Block WALL_MARKING_WARNING_DANGER = new MarkingWall("wall_marking_warning_danger", "marking_wall_warning_danger");
     public static final Block WALL_MARKING_ARROWLEFT = new MarkingWall("wall_marking_arrowleft", "marking_wall_arrowleft");
