@@ -44,6 +44,10 @@ public class ModBlocks {
     public static final Block FLOOR_MARKING_YELLOW_SINGLELINE = new MarkingFloor("floor_marking_yellow_singleline", "marking_yellow_singleline");
     public static final Block FLOOR_MARKING_YELLOW_SQUARE = new MarkingFloor("floor_marking_yellow_square", "marking_yellow_square");
     public static final Block FLOOR_MARKING_YELLOW_STRIPES = new MarkingFloor("floor_marking_yellow_stripes", "marking_yellow_stripes");
+    public static final Block FLOOR_MARKING_YELLOW_T_CROSSING = new MarkingFloor("floor_marking_yellow_t_crossing", "marking_yellow_t_crossing");
+    public static final Block FLOOR_MARKING_YELLOW_CROSSING = new MarkingFloor("floor_marking_yellow_crossing", "marking_yellow_crossing");
+    public static final Block FLOOR_MARKING_YELLOW_TURN = new MarkingFloor("floor_marking_yellow_turn", "marking_yellow_turn");
+    public static final Block FLOOR_MARKING_YELLOW_END = new MarkingFloor("floor_marking_yellow_end", "marking_yellow_end");
 
     public static final Block FLOOR_MARKING_LETTER_A = new MarkingFloor("floor_marking_letter_a", "marking_letter_a");
     public static final Block FLOOR_MARKING_LETTER_B = new MarkingFloor("floor_marking_letter_b", "marking_letter_b");

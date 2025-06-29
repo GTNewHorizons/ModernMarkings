@@ -28,6 +28,11 @@ tile.floor_marking_danger_yellow.name=Yellow Danger Floor Marking
 tile.floor_marking_white_lane_cross.name=White Lane Cross Floor Marking
 tile.floor_marking_yellow_lane.name=Yellow Lane Floor Marking
 tile.floor_marking_exit.name=Exit Floor Marking
+tile.floor_marking_yellow_crossing.name=Yellow Crossing Floor Marking
+tile.floor_marking_yellow_t_crossing.name=Yellow T Crossing Floor Marking
+tile.floor_marking_yellow_end.name=Yellow End Floor Marking
+tile.floor_marking_yellow_turn.name=Yellow Turn Floor Marking
+
 
 tile.floor_marking_letter_a.name=Letter A Floor Marking
 tile.floor_marking_letter_b.name=Letter B Floor Marking
