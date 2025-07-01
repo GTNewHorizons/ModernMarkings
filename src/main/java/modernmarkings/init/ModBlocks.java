@@ -19,24 +19,18 @@ public class ModBlocks {
     public static final List<Block> WALL_BLOCKS = new ArrayList<>();
 
     // spotless:off
-    public static final Block FLOOR_MARKING_EXIT = new MarkingFloor("floor_marking_exit", "marking_exit");
     public static final Block FLOOR_MARKING_BLACK_SINGLELINE = new MarkingFloor("floor_marking_black_singleline", "marking_black_singleline");
-    public static final Block FLOOR_MARKING_BLUE_SINGLELINE = new MarkingFloor("floor_marking_blue_singleline", "marking_blue_singleline");
-    public static final Block FLOOR_MARKING_DANGER_RED = new MarkingFloor("floor_marking_danger_red", "marking_danger_red");
-    public static final Block FLOOR_MARKING_DANGER_YELLOW = new MarkingFloor("floor_marking_danger_yellow", "marking_danger_yellow");
-    public static final Block FLOOR_MARKING_GREEN_SINGLELINE = new MarkingFloor("floor_marking_green_singleline", "marking_green_singleline");
-    public static final Block FLOOR_MARKING_NOENTRY = new MarkingFloor("floor_marking_noentry", "marking_noentry");
-    public static final Block FLOOR_MARKING_NOSTEP = new MarkingFloor("floor_marking_nostep", "marking_nostep");
-    public static final Block FLOOR_MARKING_ORANGE_SINGLELINE = new MarkingFloor("floor_marking_orange_singleline", "marking_orange_singleline");
-    public static final Block FLOOR_MARKING_RED_HAZARDLINE = new MarkingFloor("floor_marking_red_hazardline", "marking_red_hazardline");
-    public static final Block FLOOR_MARKING_RED_SINGLELINE = new MarkingFloor("floor_marking_red_singleline", "marking_red_singleline");
-    public static final Block FLOOR_MARKING_REDX = new MarkingFloor("floor_marking_redx", "marking_redx");
+
     public static final Block FLOOR_MARKING_WHITE_ARROW = new MarkingFloor("floor_marking_white_arrow", "marking_white_arrow");
     public static final Block FLOOR_MARKING_WHITE_LANE = new MarkingFloor("floor_marking_white_lane", "marking_white_lane");
     public static final Block FLOOR_MARKING_WHITE_LANE_CROSS = new MarkingFloor("floor_marking_white_lane_cross", "marking_white_lane_cross");
     public static final Block FLOOR_MARKING_WHITE_SINGLELINE = new MarkingFloor("floor_marking_white_singleline", "marking_white_singleline");
     public static final Block FLOOR_MARKING_WHITE_SQUARE = new MarkingFloor("floor_marking_white_square", "marking_white_square");
     public static final Block FLOOR_MARKING_WHITEBLACK_HAZARDLINE = new MarkingFloor("floor_marking_whiteblack_hazardline", "marking_whiteblack_hazardline");
+    public static final Block FLOOR_MARKING_NOENTRY = new MarkingFloor("floor_marking_noentry", "marking_noentry");
+    public static final Block FLOOR_MARKING_NOSTEP = new MarkingFloor("floor_marking_nostep", "marking_nostep");
+    public static final Block FLOOR_MARKING_EXIT = new MarkingFloor("floor_marking_exit", "marking_exit");
+
     public static final Block FLOOR_MARKING_YELLOW_ARROW = new MarkingFloor("floor_marking_yellow_arrow", "marking_yellow_arrow");
     public static final Block FLOOR_MARKING_YELLOW_HAZARDLINE = new MarkingFloor("floor_marking_yellow_hazardline", "marking_yellow_hazardline");
     public static final Block FLOOR_MARKING_YELLOW_LANE = new MarkingFloor("floor_marking_yellow_lane", "marking_yellow_lane");
@@ -44,6 +38,55 @@ public class ModBlocks {
     public static final Block FLOOR_MARKING_YELLOW_SINGLELINE = new MarkingFloor("floor_marking_yellow_singleline", "marking_yellow_singleline");
     public static final Block FLOOR_MARKING_YELLOW_SQUARE = new MarkingFloor("floor_marking_yellow_square", "marking_yellow_square");
     public static final Block FLOOR_MARKING_YELLOW_STRIPES = new MarkingFloor("floor_marking_yellow_stripes", "marking_yellow_stripes");
+    public static final Block FLOOR_MARKING_YELLOW_T_CROSSING = new MarkingFloor("floor_marking_yellow_t_crossing", "marking_yellow_t_crossing");
+    public static final Block FLOOR_MARKING_YELLOW_CROSSING = new MarkingFloor("floor_marking_yellow_crossing", "marking_yellow_crossing");
+    public static final Block FLOOR_MARKING_YELLOW_TURN = new MarkingFloor("floor_marking_yellow_turn", "marking_yellow_turn");
+    public static final Block FLOOR_MARKING_YELLOW_END = new MarkingFloor("floor_marking_yellow_end", "marking_yellow_end");
+    public static final Block FLOOR_MARKING_DANGER_YELLOW = new MarkingFloor("floor_marking_danger_yellow", "marking_danger_yellow");
+
+    public static final Block FLOOR_MARKING_WHITE_T_CROSSING = new MarkingFloor("floor_marking_white_t_crossing", "marking_white_t_crossing");
+    public static final Block FLOOR_MARKING_WHITE_CROSSING = new MarkingFloor("floor_marking_white_crossing", "marking_white_crossing");
+    public static final Block FLOOR_MARKING_WHITE_TURN = new MarkingFloor("floor_marking_white_turn", "marking_white_turn");
+    public static final Block FLOOR_MARKING_WHITE_END = new MarkingFloor("floor_marking_white_end", "marking_white_end");
+    public static final Block FLOOR_MARKING_WHITE_SIDELINE = new MarkingFloor("floor_marking_white_sideline", "marking_white_sideline");
+
+    public static final Block FLOOR_MARKING_GREEN_T_CROSSING = new MarkingFloor("floor_marking_green_t_crossing", "marking_green_t_crossing");
+    public static final Block FLOOR_MARKING_GREEN_CROSSING = new MarkingFloor("floor_marking_green_crossing", "marking_green_crossing");
+    public static final Block FLOOR_MARKING_GREEN_TURN = new MarkingFloor("floor_marking_green_turn", "marking_green_turn");
+    public static final Block FLOOR_MARKING_GREEN_END = new MarkingFloor("floor_marking_green_end", "marking_green_end");
+    public static final Block FLOOR_MARKING_GREEN_SIDELINE = new MarkingFloor("floor_marking_green_sideline", "marking_green_sideline");
+    public static final Block FLOOR_MARKING_GREEN_SQUARE = new MarkingFloor("floor_marking_green_square", "marking_green_square");
+    public static final Block FLOOR_MARKING_GREEN_HAZARDLINE = new MarkingFloor("floor_marking_green_hazardline", "marking_green_hazardline");
+    public static final Block FLOOR_MARKING_GREEN_SINGLELINE = new MarkingFloor("floor_marking_green_singleline", "marking_green_singleline");
+
+    public static final Block FLOOR_MARKING_BLUE_T_CROSSING = new MarkingFloor("floor_marking_blue_t_crossing", "marking_blue_t_crossing");
+    public static final Block FLOOR_MARKING_BLUE_CROSSING = new MarkingFloor("floor_marking_blue_crossing", "marking_blue_crossing");
+    public static final Block FLOOR_MARKING_BLUE_TURN = new MarkingFloor("floor_marking_blue_turn", "marking_blue_turn");
+    public static final Block FLOOR_MARKING_BLUE_END = new MarkingFloor("floor_marking_blue_end", "marking_blue_end");
+    public static final Block FLOOR_MARKING_BLUE_SIDELINE = new MarkingFloor("floor_marking_blue_sideline", "marking_blue_sideline");
+    public static final Block FLOOR_MARKING_BLUE_SQUARE = new MarkingFloor("floor_marking_blue_square", "marking_blue_square");
+    public static final Block FLOOR_MARKING_BLUE_HAZARDLINE = new MarkingFloor("floor_marking_blue_hazardline", "marking_blue_hazardline");
+    public static final Block FLOOR_MARKING_BLUE_SINGLELINE = new MarkingFloor("floor_marking_blue_singleline", "marking_blue_singleline");
+
+    public static final Block FLOOR_MARKING_RED_T_CROSSING = new MarkingFloor("floor_marking_red_t_crossing", "marking_red_t_crossing");
+    public static final Block FLOOR_MARKING_RED_CROSSING = new MarkingFloor("floor_marking_red_crossing", "marking_red_crossing");
+    public static final Block FLOOR_MARKING_RED_TURN = new MarkingFloor("floor_marking_red_turn", "marking_red_turn");
+    public static final Block FLOOR_MARKING_RED_END = new MarkingFloor("floor_marking_red_end", "marking_red_end");
+    public static final Block FLOOR_MARKING_RED_SIDELINE = new MarkingFloor("floor_marking_red_sideline", "marking_red_sideline");
+    public static final Block FLOOR_MARKING_RED_SQUARE = new MarkingFloor("floor_marking_red_square", "marking_red_square");
+    public static final Block FLOOR_MARKING_RED_HAZARDLINE = new MarkingFloor("floor_marking_red_hazardline", "marking_red_hazardline");
+    public static final Block FLOOR_MARKING_RED_SINGLELINE = new MarkingFloor("floor_marking_red_singleline", "marking_red_singleline");
+    public static final Block FLOOR_MARKING_DANGER_RED = new MarkingFloor("floor_marking_danger_red", "marking_danger_red");
+    public static final Block FLOOR_MARKING_REDX = new MarkingFloor("floor_marking_redx", "marking_redx");
+
+    public static final Block FLOOR_MARKING_ORANGE_T_CROSSING = new MarkingFloor("floor_marking_orange_t_crossing", "marking_orange_t_crossing");
+    public static final Block FLOOR_MARKING_ORANGE_CROSSING = new MarkingFloor("floor_marking_orange_crossing", "marking_orange_crossing");
+    public static final Block FLOOR_MARKING_ORANGE_TURN = new MarkingFloor("floor_marking_orange_turn", "marking_orange_turn");
+    public static final Block FLOOR_MARKING_ORANGE_END = new MarkingFloor("floor_marking_orange_end", "marking_orange_end");
+    public static final Block FLOOR_MARKING_ORANGE_SIDELINE = new MarkingFloor("floor_marking_orange_sideline", "marking_orange_sideline");
+    public static final Block FLOOR_MARKING_ORANGE_SQUARE = new MarkingFloor("floor_marking_orange_square", "marking_orange_square");
+    public static final Block FLOOR_MARKING_ORANGE_HAZARDLINE = new MarkingFloor("floor_marking_orange_hazardline", "marking_orange_hazardline");
+    public static final Block FLOOR_MARKING_ORANGE_SINGLELINE = new MarkingFloor("floor_marking_orange_singleline", "marking_orange_singleline");
 
     public static final Block FLOOR_MARKING_LETTER_A = new MarkingFloor("floor_marking_letter_a", "marking_letter_a");
     public static final Block FLOOR_MARKING_LETTER_B = new MarkingFloor("floor_marking_letter_b", "marking_letter_b");
