@@ -44,6 +44,6 @@ public class ModRecipes {
             Block block = ModBlocks.WALL_BLOCKS.get(i);
             CarvingUtils.chisel.addVariation("Wall blocks", block, 0, i);
         }
-    };
+    }
 
 }
