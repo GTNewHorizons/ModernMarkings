@@ -421,6 +421,17 @@ public class ModBlocks {
     
     public static final Block FLOOR_MARKING_WHITE_DOUBLE_ARROW = new MarkingFloor("floor_marking_white_double_arrow", "marking_white_double_arrow");
     public static final Block WALL_MARKING_WHITE_DOUBLE_ARROW = new MarkingWall("wall_marking_white_double_arrow", "marking_white_double_arrow");
+
+    public static final Block FLOOR_MARKING_NUMBER_DASH = new MarkingFloor("floor_marking_number_dash", "marking_number_dash");
+    public static final Block FLOOR_MARKING_NUMBER_COMMA = new MarkingFloor("floor_marking_number_comma", "marking_number_comma");
+    public static final Block FLOOR_MARKING_NUMBER_PERIOD = new MarkingFloor("floor_marking_number_period", "marking_number_period");
+    public static final Block FLOOR_MARKING_EXCLAMATION_MARK = new MarkingFloor("floor_marking_exclamation_mark", "marking_wall_exclamation_mark");
+    public static final Block FLOOR_MARKING_QUESTION_MARK = new MarkingFloor("floor_marking_question_mark", "marking_wall_question_mark");
+    public static final Block FLOOR_MARKING_NUMBER_DASH_BLACK = new MarkingFloor("floor_marking_number_dash_black", "marking_number_dash_black");
+    public static final Block FLOOR_MARKING_NUMBER_COMMA_BLACK = new MarkingFloor("floor_marking_number_comma_black", "marking_number_comma_black");
+    public static final Block FLOOR_MARKING_NUMBER_PERIOD_BLACK = new MarkingFloor("floor_marking_number_period_black", "marking_number_period_black");
+    public static final Block FLOOR_MARKING_EXCLAMATION_MARK_BLACK = new MarkingFloor("floor_marking_exclamation_mark_black", "marking_wall_exclamation_mark_black");
+    public static final Block FLOOR_MARKING_QUESTION_MARK_BLACK = new MarkingFloor("floor_marking_question_mark_black", "marking_wall_question_mark_black");
     // spotless:on
 
     public static void registerBlocks() {

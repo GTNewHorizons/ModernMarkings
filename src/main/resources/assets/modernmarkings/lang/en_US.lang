@@ -397,3 +397,14 @@ tile.wall_marking_voltage_zpm.name=Zero Point Module Voltage Wall Marking
 tile.wall_marking_warning.name=Warning Wall Marking
 tile.wall_marking_warning_danger.name=Warning Wall Marking
 tile.wall_marking_white_double_arrow.name=White Double Arrow Wall Marking
+
+tile.floor_marking_number_dash.name=Dash Floor Marking
+tile.floor_marking_number_comma.name=Comma Floor Marking
+tile.floor_marking_number_period.name=Period Floor Marking
+tile.floor_marking_exclamation_mark.name=Exclamation Mark Floor Marking
+tile.floor_marking_question_mark.name=Question Mark Floor Marking
+tile.floor_marking_number_dash_black.name=Dash Floor Marking Black
+tile.floor_marking_number_comma_black.name=Comma Floor Marking Black
+tile.floor_marking_number_period_black.name=Period Floor Marking Black
+tile.floor_marking_exclamation_mark_black.name=Exclamation Mark Floor Marking Black
+tile.floor_marking_question_mark_black.name=Question Mark Floor Marking Black
