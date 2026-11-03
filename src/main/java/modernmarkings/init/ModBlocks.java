@@ -313,6 +313,114 @@ public class ModBlocks {
     public static final Block WALL_MARKING_SYMBOL_PRODUCTION_BLACK = new MarkingWall("wall_marking_symbol_production_black", "marking_wall_symbol_production_black");
     public static final Block WALL_MARKING_SYMBOL_RADIATION_BLACK = new MarkingWall("wall_marking_symbol_radiation_black", "marking_wall_symbol_radiation_black");
     public static final Block WALL_MARKING_SYMBOL_STORAGE_BLACK = new MarkingWall("wall_marking_symbol_storage_black", "marking_wall_symbol_storage_black");
+
+    public static final Block WALL_MARKING_EXCLAMATION_MARK = new MarkingWall("wall_marking_exclamation_mark", "marking_wall_exclamation_mark");
+    public static final Block WALL_MARKING_QUESTION_MARK = new MarkingWall("wall_marking_question_mark", "marking_wall_question_mark");
+    public static final Block WALL_MARKING_EXCLAMATION_MARK_BLACK = new MarkingWall("wall_marking_exclamation_mark_black", "marking_wall_exclamation_mark_black");
+    public static final Block WALL_MARKING_QUESTION_MARK_BLACK = new MarkingWall("wall_marking_question_mark_black", "marking_wall_question_mark_black");
+    public static final Block WALL_MARKING_CORROSIVE = new MarkingWall("wall_marking_corrosive", "marking_corrosive");
+    public static final Block WALL_MARKING_HEALTH_HAZARD = new MarkingWall("wall_marking_health_hazard", "marking_health_hazard");
+    public static final Block WALL_MARKING_SKULL_CROSSBONES = new MarkingWall("wall_marking_skull_crossbones", "marking_skull_crossbones");
+    public static final Block WALL_MARKING_WARNING = new MarkingWall("wall_marking_warning", "marking_warning");
+    public static final Block WALL_MARKING_PPE_BOOTS = new MarkingWall("wall_marking_ppe_boots", "marking_ppe_boots");
+    public static final Block WALL_MARKING_PPE_GLASSES = new MarkingWall("wall_marking_ppe_glasses", "marking_ppe_glasses");
+    public static final Block WALL_MARKING_PPE_HIGHVIS = new MarkingWall("wall_marking_ppe_highvis", "marking_ppe_highvis");
+    public static final Block WALL_MARKING_PPE_MASK = new MarkingWall("wall_marking_ppe_mask", "marking_ppe_mask");
+    public static final Block WALL_MARKING_PPE_SUIT = new MarkingWall("wall_marking_ppe_suit", "marking_ppe_suit");
+    public static final Block WALL_MARKING_NO_SAFETY = new MarkingWall("wall_marking_no_safety", "marking_no_safety");
+    public static final Block WALL_MARKING_SMOKING_FIRST = new MarkingWall("wall_marking_smoking_first", "marking_smoking_first");
+
+    public static final Block WALL_MARKING_HAZARD_BARBEDWIRE = new MarkingWall("wall_marking_hazard_barbedwire", "marking_hazard_barbedwire");
+    public static final Block WALL_MARKING_HAZARD_HIGHWATER = new MarkingWall("wall_marking_hazard_highwater", "marking_hazard_highwater");
+    public static final Block WALL_MARKING_HAZARD_WITHER = new MarkingWall("wall_marking_hazard_wither", "marking_hazard_wither");
+    public static final Block WALL_MARKING_HAZARD_BATTERY = new MarkingWall("wall_marking_hazard_battery", "marking_hazard_battery");
+    public static final Block WALL_MARKING_HAZARD_HOTSURFACE = new MarkingWall("wall_marking_hazard_hotsurface", "marking_hazard_hotsurface");
+    public static final Block WALL_MARKING_PPE_EARPROT = new MarkingWall("wall_marking_ppe_earprot", "marking_ppe_earprot");
+    public static final Block WALL_MARKING_HAZARD_COLD = new MarkingWall("wall_marking_hazard_cold", "marking_hazard_cold");
+    public static final Block WALL_MARKING_HAZARD_IRRITANT = new MarkingWall("wall_marking_hazard_irritant", "marking_hazard_irritant");
+    public static final Block WALL_MARKING_PRESCRIPTION_TURNOFF = new MarkingWall("wall_marking_prescription_turnoff", "marking_prescription_turnoff");
+    public static final Block WALL_MARKING_HAZARD_CRUSHING = new MarkingWall("wall_marking_hazard_crushing", "marking_hazard_crushing");
+    public static final Block WALL_MARKING_HAZARD_LASER = new MarkingWall("wall_marking_hazard_laser", "marking_hazard_laser");
+    public static final Block WALL_MARKING_SAFETY_ASSEMBLY = new MarkingWall("wall_marking_safety_assembly", "marking_safety_assembly");
+    public static final Block WALL_MARKING_HAZARD_EXPLOSIVEATHMOSPHERE = new MarkingWall("wall_marking_hazard_explosiveathmosphere", "marking_hazard_explosiveathmosphere");
+    public static final Block WALL_MARKING_HAZARD_MAGNETIC = new MarkingWall("wall_marking_hazard_magnetic", "marking_hazard_magnetic");
+    public static final Block WALL_MARKING_SAFETY_DEFIBRILLATOR = new MarkingWall("wall_marking_safety_defibrillator", "marking_safety_defibrillator");
+    public static final Block WALL_MARKING_HAZARD_FALLING = new MarkingWall("wall_marking_hazard_falling", "marking_hazard_falling");
+    public static final Block WALL_MARKING_HAZARD_MOBFARM = new MarkingWall("wall_marking_hazard_mobfarm", "marking_hazard_mobfarm");
+    public static final Block WALL_MARKING_SAFETY_EMERGENCYSTOP = new MarkingWall("wall_marking_safety_emergencystop", "marking_safety_emergencystop");
+    public static final Block WALL_MARKING_HAZARD_FALLINGDEBRIS = new MarkingWall("wall_marking_hazard_fallingdebris", "marking_hazard_fallingdebris");
+    public static final Block WALL_MARKING_HAZARD_NOISE = new MarkingWall("wall_marking_hazard_noise", "marking_hazard_noise");
+    public static final Block WALL_MARKING_SAFETY_HEALTH = new MarkingWall("wall_marking_safety_health", "marking_safety_health");
+    public static final Block WALL_MARKING_HAZARD_FLUXRIFT = new MarkingWall("wall_marking_hazard_fluxrift", "marking_hazard_fluxrift");
+    public static final Block WALL_MARKING_HAZARD_RADIATION = new MarkingWall("wall_marking_hazard_radiation", "marking_hazard_radiation");
+    public static final Block WALL_MARKING_SAFETY_LADDER = new MarkingWall("wall_marking_safety_ladder", "marking_safety_ladder");
+    public static final Block WALL_MARKING_HAZARD_GROUND = new MarkingWall("wall_marking_hazard_ground", "marking_hazard_ground");
+    public static final Block WALL_MARKING_HAZARD_RADIOWAVES = new MarkingWall("wall_marking_hazard_radiowaves", "marking_hazard_radiowaves");
+    public static final Block WALL_MARKING_SAFETY_O2 = new MarkingWall("wall_marking_safety_o2", "marking_safety_o2");
+    public static final Block WALL_MARKING_HAZARD_HIGHPRESSURE = new MarkingWall("wall_marking_hazard_highpressure", "marking_hazard_highpressure");
+    public static final Block WALL_MARKING_HAZARD_SPAWNER = new MarkingWall("wall_marking_hazard_spawner", "marking_hazard_spawner");
+    public static final Block WALL_MARKING_SAFETY_SHOWER = new MarkingWall("wall_marking_safety_shower", "marking_safety_shower");
+    public static final Block WALL_MARKING_HAZARD_HIGHTEMP = new MarkingWall("wall_marking_hazard_hightemp", "marking_hazard_hightemp");
+    public static final Block WALL_MARKING_HAZARD_VIDEOCAMERA = new MarkingWall("wall_marking_hazard_videocamera", "marking_hazard_videocamera");
+    public static final Block WALL_MARKING_EXIT_GREEN = new MarkingWall("wall_marking_exit_green", "marking_wall_exit_green");
+
+    public static final Block WALL_MARKING_FLAG_GTNH = new MarkingWall("wall_marking_flag_gtnh", "marking_flag_GTNH");
+    public static final Block FLOOR_MARKING_YELLOW_CORNER = new MarkingFloor("floor_marking_yellow_corner", "marking_yellow_corner");
+    public static final Block FLOOR_MARKING_WHITE_CORNER = new MarkingFloor("floor_marking_white_corner", "marking_white_corner");
+    public static final Block FLOOR_MARKING_BLACK_CORNER = new MarkingFloor("floor_marking_black_corner", "marking_black_corner");
+    public static final Block FLOOR_MARKING_GREEN_CORNER = new MarkingFloor("floor_marking_green_corner", "marking_green_corner");
+    public static final Block FLOOR_MARKING_BLUE_CORNER = new MarkingFloor("floor_marking_blue_corner", "marking_blue_corner");
+    public static final Block FLOOR_MARKING_RED_CORNER = new MarkingFloor("floor_marking_red_corner", "marking_red_corner");
+    public static final Block FLOOR_MARKING_ORANGE_CORNER = new MarkingFloor("floor_marking_orange_corner", "marking_orange_corner");
+    // +++=====SEMIOTICS=====++
+    // Where a name id already exists, I append semiotic to the end of the IDs
+    public static final Block WALL_MARKING_AIRLOCK = new MarkingWall("wall_marking_airlock", "marking_wall_airlock");
+    public static final Block WALL_MARKING_ARROWDOWN_SEMIOTIC = new MarkingWall("wall_marking_arrowdown_semiotic", "marking_wall_arrowdown_semiotic");
+    public static final Block WALL_MARKING_ARROWLEFT_SEMIOTIC = new MarkingWall("wall_marking_arrowleft_semiotic", "marking_wall_arrowleft_semiotic");
+    public static final Block WALL_MARKING_ARROWRIGHT_SEMIOTIC = new MarkingWall("wall_marking_arrowright_semiotic", "marking_wall_arrowright_semiotic");
+    public static final Block WALL_MARKING_ARROWUP_SEMIOTIC = new MarkingWall("wall_marking_arrowup_semiotic", "marking_wall_arrowup_semiotic");
+    public static final Block WALL_MARKING_AUTODOC = new MarkingWall("wall_marking_autodoc", "marking_wall_autodoc");
+    public static final Block WALL_MARKING_BRIDGE = new MarkingWall("wall_marking_bridge", "marking_wall_bridge");
+    public static final Block WALL_MARKING_BULKHEAD = new MarkingWall("wall_marking_bulkhead", "marking_wall_bulkhead");
+    public static final Block WALL_MARKING_COFFEE = new MarkingWall("wall_marking_coffee", "marking_wall_coffee");
+    public static final Block WALL_MARKING_CRYOGENICS = new MarkingWall("wall_marking_cryogenics", "marking_wall_cryogenics");
+    public static final Block WALL_MARKING_ELECTRONICS = new MarkingWall("wall_marking_electronics", "marking_wall_electronics");
+    public static final Block WALL_MARKING_EXHAUST = new MarkingWall("wall_marking_exhaust", "marking_wall_exhaust");
+    public static final Block WALL_MARKING_HAZARD_WARNING = new MarkingWall("wall_marking_hazard_warning", "marking_wall_hazard_warning");
+    public static final Block WALL_MARKING_HAZARD_RADIATION_SEMIOTIC = new MarkingWall("wall_marking_hazard_radiation_semiotic", "marking_wall_hazard_radiation_semiotic");
+    public static final Block WALL_MARKING_INTERCOM = new MarkingWall("wall_marking_intercom", "marking_wall_intercom");
+    public static final Block WALL_MARKING_LADDERWAY = new MarkingWall("wall_marking_ladderway", "marking_wall_ladderway");
+    public static final Block WALL_MARKING_LASER = new MarkingWall("wall_marking_laser", "marking_wall_laser");
+    public static final Block WALL_MARKING_LIFE_SUPPORT = new MarkingWall("wall_marking_life_support", "marking_wall_life_support");
+    public static final Block WALL_MARKING_LIFE_SUPPORT_MEDICAL = new MarkingWall("wall_marking_life_support_medical", "marking_wall_life_support_medical");
+    public static final Block WALL_MAINTENANCE = new MarkingWall("wall_marking_maintenance", "marking_wall_maintenance");
+    public static final Block WALL_MARKING_MEDICAL = new MarkingWall("wall_marking_medical", "marking_wall_medical");
+    public static final Block WALL_MARKING_NO_AIR = new MarkingWall("wall_marking_no_air", "marking_wall_no_air");
+    public static final Block WALL_MARKING_NO_AIR_ART_GRAV = new MarkingWall("wall_marking_no_air_art_grav", "marking_wall_no_air_art_grav");
+    public static final Block WALL_MARKING_NO_AIR_NO_GRAVITY = new MarkingWall("wall_marking_no_air_no_gravity", "marking_wall_no_air_no_gravity");
+    public static final Block WALL_PHOTONICS = new MarkingWall("wall_marking_photonics", "marking_wall_photonics");
+    public static final Block WALL_MARKING_PRESSURE_SUIT_LOCKER = new MarkingWall("wall_marking_pressure_suit_locker", "marking_wall_pressure_suit_locker");
+    public static final Block WALL_MARKING_PRESSURIZED_AREA = new MarkingWall("wall_marking_pressurized_area", "marking_wall_pressurized_area");
+    public static final Block WALL_MARKING_PRESSURIZED_AREA_ART_GRAVITY = new MarkingWall("wall_marking_pressurized_area_art_gravity", "marking_wall_pressurized_area_art_gravity");
+    public static final Block WALL_MARKING_PRESSURIZED_AREA_NO_GRAV = new MarkingWall("wall_marking_pressurized_area_no_grav", "marking_wall_pressurized_area_no_grav");
+    public static final Block WALL_MARKING_RADIATION = new MarkingWall("wall_marking_radiation", "marking_wall_radiation");
+    public static final Block WALL_MARKING_RADIATION_SHIELDED_AREA = new MarkingWall("wall_marking_radiation_shielded_area", "marking_wall_radiation_shielded_area");
+    public static final Block WALL_MARKING_STORAGE = new MarkingWall("wall_marking_storage", "marking_wall_storage");
+    public static final Block WALL_MARKING_STORAGE_REFRIGERATION = new MarkingWall("wall_marking_storage_refrigeration", "marking_wall_storage_refrigeration");
+    public static final Block WALL_MARKING_STORAGE_FOODSTUFFS = new MarkingWall("wall_marking_storage_foodstuffs", "marking_wall_storage_foodstuffs");
+    public static final Block WALL_MARKING_STORAGE_FOODSTUFFS_FRIDGE = new MarkingWall("wall_marking_storage_foodstuffs_fridge", "marking_wall_storage_foodstuffs_fridge");
+    public static final Block WALL_MARKING_TERMINAL = new MarkingWall("wall_marking_terminal", "marking_wall_terminal");
+
+    public static final Block FLOOR_MARKING_BLACK_T_CROSSING = new MarkingFloor("floor_marking_black_t_crossing", "marking_black_t_crossing");
+    public static final Block FLOOR_MARKING_BLACK_CROSSING = new MarkingFloor("floor_marking_black_crossing", "marking_black_crossing");
+    public static final Block FLOOR_MARKING_BLACK_TURN = new MarkingFloor("floor_marking_black_turn", "marking_black_turn");
+    public static final Block FLOOR_MARKING_BLACK_END = new MarkingFloor("floor_marking_black_end", "marking_black_end");
+    public static final Block FLOOR_MARKING_BLACK_SIDELINE = new MarkingFloor("floor_marking_black_sideline", "marking_black_sideline");
+    public static final Block FLOOR_MARKING_BLACK_SQUARE = new MarkingFloor("floor_marking_black_square", "marking_black_square");
+    public static final Block FLOOR_MARKING_YELLOW_LANE_CROSS = new MarkingFloor("floor_marking_yellow_lane_cross", "marking_yellow_lane_cross");
+    
+    public static final Block FLOOR_MARKING_WHITE_DOUBLE_ARROW = new MarkingFloor("floor_marking_white_double_arrow", "marking_white_double_arrow");
+    public static final Block WALL_MARKING_WHITE_DOUBLE_ARROW = new MarkingWall("wall_marking_white_double_arrow", "marking_white_double_arrow");
     // spotless:on
 
     public static void registerBlocks() {
