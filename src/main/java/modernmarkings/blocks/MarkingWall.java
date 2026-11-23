@@ -150,7 +150,7 @@ public class MarkingWall extends BlockBase {
         int direction = getDirectionFromPlacedPlayer(world, x, y, z);
 
         ForgeDirection dir = ForgeDirection.getOrientation(direction);
-        return world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false);
+        return world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir.getOpposite(), false);
     }
 
     @Override
