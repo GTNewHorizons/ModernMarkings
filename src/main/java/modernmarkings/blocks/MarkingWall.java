@@ -150,18 +150,16 @@ public class MarkingWall extends BlockBase {
         int direction = getDirectionFromPlacedPlayer(world, x, y, z);
 
         ForgeDirection dir = ForgeDirection.getOrientation(direction);
-        return world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false);
+        return world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir.getOpposite(), false);
     }
 
     @Override
     public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
         int meta = world.getBlockMetadata(x, y, z);
 
-        // I have no idea why .getOpposite is required here when it's not in canPlaceBlockAt,
-        // but it works like this
         ForgeDirection dir = ForgeDirection.getOrientation(meta)
             .getOpposite();
-        if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false)) {
+        if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir.getOpposite(), false)) {
             world.setBlockToAir(x, y, z);
             this.dropBlockAsItem(world, x, y, z, 0, 0);
         }
