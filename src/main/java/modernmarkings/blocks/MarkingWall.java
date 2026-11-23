@@ -159,7 +159,7 @@ public class MarkingWall extends BlockBase {
 
         ForgeDirection dir = ForgeDirection.getOrientation(meta)
             .getOpposite();
-        if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false)) {
+        if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir.getOpposite(), false)) {
             world.setBlockToAir(x, y, z);
             this.dropBlockAsItem(world, x, y, z, 0, 0);
         }
