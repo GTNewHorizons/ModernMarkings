@@ -157,8 +157,6 @@ public class MarkingWall extends BlockBase {
     public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor) {
         int meta = world.getBlockMetadata(x, y, z);
 
-        // I have no idea why .getOpposite is required here when it's not in canPlaceBlockAt,
-        // but it works like this
         ForgeDirection dir = ForgeDirection.getOrientation(meta)
             .getOpposite();
         if (!world.isSideSolid(x + dir.offsetX, y, z + dir.offsetZ, dir, false)) {
